@@ -53,4 +53,4 @@ The final resulting ruleset created by this configuration can be seen in the [ru
 
 ## License
 
-MIT. Copyright (c) [Feross Aboukhadijeh](http://feross.org).
+See the [LICENSE](LICENSE.txt) file for license rights and limitations (MIT).
