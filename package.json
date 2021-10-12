@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-bluejava",
+  "version": "1.0.0",
+  "exports": {
+    "import": "./index.js",
+    "require": "./.eslintrc.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.0.0",
+    "eslint-plugin-import": "^2.25.1"
+  },
+  "eslintConfig": {
+    "extends": "."
+  },
+  "scripts": {
+    "genrules-report": "eslint --print-config .eslintrc.js > rules-report.json"
+  }
+}
