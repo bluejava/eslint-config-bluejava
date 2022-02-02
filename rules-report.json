@@ -277,6 +277,15 @@
     "no-unused-expressions": [
       "error"
     ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "varsIgnorePattern": "_\\d?"
+      }
+    ],
     "no-useless-computed-key": [
       "error"
     ],
@@ -310,7 +319,9 @@
       "after",
       {
         "overrides": {
-          "=": "none"
+          "=": "none",
+          "?": "before",
+          ":": "before"
         }
       }
     ],
@@ -573,9 +584,6 @@
       "error"
     ],
     "no-unused-labels": [
-      "error"
-    ],
-    "no-unused-vars": [
       "error"
     ],
     "no-useless-backreference": [

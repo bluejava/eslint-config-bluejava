@@ -135,6 +135,15 @@ module.exports = {
 		'no-template-curly-in-string': 'error',
 		'no-throw-literal': 'error',
 		'no-unused-expressions': 'error',
+		'no-unused-vars': [
+			'error',
+			{
+				vars: 'all',
+				args: 'after-used',
+				ignoreRestSiblings: true,
+				varsIgnorePattern: '_\\d?',
+			},
+		],
 		'no-useless-computed-key': 'error',
 		'no-useless-concat': 'error',
 		'no-useless-escape': 'error',
@@ -150,6 +159,8 @@ module.exports = {
 			{
 				overrides: {
 					'=': 'none',
+					'?': 'before',
+					':': 'before',
 				},
 			},
 		],
