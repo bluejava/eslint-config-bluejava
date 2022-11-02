@@ -69,6 +69,7 @@ module.exports = {
 		'function-paren-newline': 'error',
 		'guard-for-in': 'warn',
 		'implicit-arrow-linebreak': 'error',
+		'import/extensions': ['error', 'always', {ignorePackages: true}],
 		'import/group-exports': 'error',
 		'import/newline-after-import': 'error',
 		'import/no-commonjs': 'error',
@@ -133,6 +134,7 @@ module.exports = {
 		'no-shadow': 'error',
 		'no-tabs': ['error', { allowIndentationTabs: true }],
 		'no-template-curly-in-string': 'error',
+		'no-trailing-spaces': 'error',
 		'no-throw-literal': 'error',
 		'no-unused-expressions': 'error',
 		'no-unused-vars': [

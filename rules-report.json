@@ -5,11 +5,7 @@
     "es2021": true,
     "node": true
   },
-  "globals": {
-    "eki": false,
-    "log": true,
-    "Zousan": false
-  },
+  "globals": {},
   "parser": null,
   "parserOptions": {
     "ecmaFeatures": {
@@ -63,15 +59,10 @@
       }
     ],
     "comma-spacing": [
-      "error",
-      {
-        "before": false,
-        "after": true
-      }
+      "error"
     ],
     "comma-style": [
-      "error",
-      "last"
+      "error"
     ],
     "consistent-return": [
       "error"
@@ -112,6 +103,13 @@
     "implicit-arrow-linebreak": [
       "error"
     ],
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "ignorePackages": true
+      }
+    ],
     "import/group-exports": [
       "error"
     ],
@@ -150,11 +148,7 @@
       "tab"
     ],
     "key-spacing": [
-      "error",
-      {
-        "beforeColon": false,
-        "afterColon": true
-      }
+      "error"
     ],
     "keyword-spacing": [
       "error",
@@ -271,6 +265,9 @@
     "no-template-curly-in-string": [
       "error"
     ],
+    "no-trailing-spaces": [
+      "error"
+    ],
     "no-throw-literal": [
       "error"
     ],
@@ -382,8 +379,7 @@
       }
     ],
     "space-before-blocks": [
-      "error",
-      "always"
+      "error"
     ],
     "space-before-function-paren": [
       "error",
@@ -394,8 +390,7 @@
       }
     ],
     "space-in-parens": [
-      "error",
-      "never"
+      "error"
     ],
     "space-infix-ops": [
       "error"
@@ -429,8 +424,7 @@
       "error"
     ],
     "wrap-iife": [
-      "error",
-      "inside"
+      "error"
     ],
     "yoda": [
       "error"
@@ -514,8 +508,7 @@
       "error"
     ],
     "no-inner-declarations": [
-      "error",
-      "both"
+      "error"
     ],
     "no-invalid-regexp": [
       "error"
@@ -600,250 +593,6 @@
     ],
     "use-isnan": [
       "error"
-    ],
-    "no-comma-dangle": [
-      0
-    ],
-    "no-extra-parens": [
-      1,
-      "all",
-      {
-        "nestedBinaryExpressions": false
-      }
-    ],
-    "no-negated-in-lhs": [
-      2
-    ],
-    "valid-jsdoc": [
-      0
-    ],
-    "block-scoped-var": [
-      2
-    ],
-    "complexity": [
-      1
-    ],
-    "default-case": [
-      2
-    ],
-    "dot-notation": [
-      2
-    ],
-    "no-caller": [
-      2
-    ],
-    "no-div-regex": [
-      2
-    ],
-    "no-else-return": [
-      0
-    ],
-    "no-empty-function": [
-      1
-    ],
-    "no-extra-bind": [
-      2
-    ],
-    "no-extra-label": [
-      2
-    ],
-    "no-implicit-coercion": [
-      2
-    ],
-    "no-implicit-globals": [
-      2
-    ],
-    "no-invalid-this": [
-      0
-    ],
-    "no-magic-numbers": [
-      0
-    ],
-    "no-multi-str": [
-      2
-    ],
-    "no-native-reassign": [
-      2
-    ],
-    "no-param-reassign": [
-      0
-    ],
-    "no-process-env": [
-      1
-    ],
-    "no-script-url": [
-      2
-    ],
-    "no-sequences": [
-      2
-    ],
-    "no-unmodified-loop-condition": [
-      2
-    ],
-    "no-useless-call": [
-      2
-    ],
-    "no-warning-comments": [
-      1,
-      {
-        "terms": [
-          "todo",
-          "fixme",
-          "bug"
-        ],
-        "location": "anywhere"
-      }
-    ],
-    "init-declarations": [
-      0
-    ],
-    "no-catch-shadow": [
-      2
-    ],
-    "no-label-var": [
-      2
-    ],
-    "no-undef-init": [
-      1
-    ],
-    "no-undefined": [
-      0
-    ],
-    "no-use-before-define": [
-      2,
-      {
-        "functions": false
-      }
-    ],
-    "no-sync": [
-      2
-    ],
-    "computed-property-spacing": [
-      1
-    ],
-    "consistent-this": [
-      1,
-      "me"
-    ],
-    "func-style": [
-      0
-    ],
-    "id-blacklist": [
-      0
-    ],
-    "id-length": [
-      0
-    ],
-    "id-match": [
-      0
-    ],
-    "lines-around-comment": [
-      0
-    ],
-    "max-depth": [
-      1,
-      8
-    ],
-    "max-len": [
-      1,
-      150
-    ],
-    "max-nested-callbacks": [
-      2,
-      5
-    ],
-    "max-params": [
-      1,
-      5
-    ],
-    "max-statements": [
-      1,
-      30
-    ],
-    "new-cap": [
-      0
-    ],
-    "new-parens": [
-      2
-    ],
-    "newline-after-var": [
-      0
-    ],
-    "newline-per-chained-call": [
-      0
-    ],
-    "no-array-constructor": [
-      1
-    ],
-    "no-bitwise": [
-      1
-    ],
-    "no-continue": [
-      1
-    ],
-    "no-inline-comments": [
-      0
-    ],
-    "no-lonely-if": [
-      0
-    ],
-    "no-negated-condition": [
-      0
-    ],
-    "no-nested-ternary": [
-      0
-    ],
-    "no-new-object": [
-      1
-    ],
-    "no-plusplus": [
-      0
-    ],
-    "no-restricted-syntax": [
-      0
-    ],
-    "no-spaced-func": [
-      2
-    ],
-    "no-ternary": [
-      0
-    ],
-    "no-trailing-spaces": [
-      2
-    ],
-    "no-underscore-dangle": [
-      0
-    ],
-    "no-unneeded-ternary": [
-      2
-    ],
-    "no-whitespace-before-property": [
-      2
-    ],
-    "object-curly-spacing": [
-      0
-    ],
-    "one-var": [
-      0
-    ],
-    "one-var-declaration-per-line": [
-      0
-    ],
-    "padded-blocks": [
-      0,
-      "never"
-    ],
-    "require-jsdoc": [
-      0
-    ],
-    "semi-spacing": [
-      0
-    ],
-    "sort-vars": [
-      0
-    ],
-    "wrap-regex": [
-      0
     ]
   },
   "settings": {},

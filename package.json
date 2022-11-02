@@ -1,19 +1,24 @@
 {
-  "name": "eslint-config-bluejava",
-  "version": "1.0.2",
-  "exports": {
-    "import": "./index.js",
-    "require": "./.eslintrc.js"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "eslint": "^8.0.0",
-    "eslint-plugin-import": "^2.25.1"
-  },
-  "eslintConfig": {
-    "extends": "."
-  },
-  "scripts": {
-    "genrules-report": "eslint --print-config .eslintrc.js > rules-report.json"
-  }
+	"name": "eslint-config-bluejava",
+	"version": "1.0.3",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bluejava/eslint-config-bluejava"
+	},
+	"license": "MIT",
+	"author": "Glenn Crownover <glenn@bluejava.com> (http://www.bluejava.com)",
+	"exports": {
+		"import": "./index.js",
+		"require": "./.eslintrc.js"
+	},
+	"scripts": {
+		"genrules-report": "eslint --print-config .eslintrc.js > rules-report.json"
+	},
+	"eslintConfig": {
+		"extends": "."
+	},
+	"dependencies": {
+		"eslint": "^8.0.0",
+		"eslint-plugin-import": "^2.25.1"
+	}
 }
