@@ -1,3 +1,1 @@
-const config = require('./.eslintrc.js')
-
-export default config
+export { default } from './eslint.config.js'

@@ -29,12 +29,37 @@ or
 yarn add --dev eslint-config-bluejava
 ```
 
-and then, in your `package.json`, add the following:
+### ESLint v9+ (Flat Config)
+
+For ESLint v9 and above, create an `eslint.config.js` file in your project root:
+
+```js
+import bluejavaConfig from 'eslint-config-bluejava';
+
+export default [
+  ...bluejavaConfig,
+  // Your custom configurations here
+];
+```
+
+Note: If your project is not using ES modules, name this file `eslint.config.mjs`.
+
+### ESLint v8 and below (Legacy Config)
+
+For ESLint v8 and below, in your `package.json`, add the following:
 
 ```json
   "eslintConfig": {
     "extends": "bluejava"
   },
+```
+
+Or create an `.eslintrc.js` file in your project root:
+
+```js
+module.exports = {
+  extends: 'bluejava'
+};
 ```
 
 ## Usage
